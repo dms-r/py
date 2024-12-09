@@ -63,7 +63,42 @@ profile = {
     "hobby": ["run", "swimming"]
 }
 print("The name author: %s" % (profile["name"]))
-for i in profile:
-    if i == "hobby":
-        for j in "hobby"
-        print("profile: %s" % profile[]")
+# for i in profile:
+#     if i == "hobby":
+#         for j in "hobby":
+#             print("profile: %s" % profile[j])
+
+
+
+user_agrement = input("Masukkan umur kamu: ")
+
+if str(user_agrement) != str(""):
+    print("hello, C%f" % (float(user_agrement) * float(22/7)))
+else:
+    print("try again")
+    pass
+
+
+
+pi = 22/7
+for i in range(1, 27):
+    n = float(i/7)
+    if n == pi:
+        print(f"found at {i}")
+        print("done")
+        break
+    else:
+        print(f"{i} = {n}")
+
+
+
+data_user = {
+    "name": "dimas",
+    "age": 10,
+    "hobby": ["football", "games"]
+}
+for i in range(0, len(data_user)):
+    print(f"data {data_user[i]}")
+    for j in data_user["hobby"]:
+        print(j)
+
